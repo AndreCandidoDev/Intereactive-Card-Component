@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { CardThanks } from './components/cardThanks';
 
 function App() {
@@ -8,17 +8,13 @@ function App() {
   const [activeRating, setActiveRating] = useState(new Array(5).fill(false));
   const [flagChange, setFlagChange] = useState(false);
 
-  // useEffect(() => {
-  //   setActiveRating(false)
-  // },[])
-
   const handleRatingValue = (e, key) => {
-    const value = e.target.value
-    const aux = activeRating
+    const value = e.target.value;
+    const aux = activeRating;
     
     for(let i = 0; i<aux.length; i++){
-      if(i === key) aux[i] = true
-      else aux[i] = false
+      if(i === key) aux[i] = true;
+      else aux[i] = false;
     }
 
     setActiveRating(aux)
@@ -26,10 +22,8 @@ function App() {
   }
 
   const handleRating = () => {
-    setFlagChange(true)
+    if(ratingValue !== null)  setFlagChange(true)
   }
-
-  console.log(activeRating)
 
   return (
      <div className='container'> 
