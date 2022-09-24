@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.container{
+    padding: 50px;
+    margin: auto;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+    margin: auto;
+    background-color: hsl(213, 19%, 18%);
+    width: 30%;
+    border-radius: 15px;
+    position: absolute;
+    left: 35%;
+    top: 150px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-text{
+    margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-text > h2{
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-text > p{
+    color: hsl(217, 12%, 63%);
+}
+
+.rating-area{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.ratings{
+    display: flex;
+    gap: 40px;
+}
+
+.rating-area > button{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.rating-area > button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.circle-comp > span{
+    background-color: #2b3641;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.circleCompInput{
+    background-color: #2b3641;
+    color: hsl(216, 12%, 54%);
+    border: 1px solid #2b3641;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.circleCompInput:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.circleCompActive{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    border: 1px solid hsl(217, 12%, 63%);
+    border-radius: 30px;
+    padding: 15px;
 }
