@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 .container{
     padding: 50px;
     margin: auto;
@@ -27,10 +29,15 @@
 
 .card-text > h2{
     color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
 }
 
 .card-text > p{
     color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.7;
 }
 
 .rating-area{
@@ -52,6 +59,9 @@
     border-radius: 15px;
     border: none;
     cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .rating-area > button:hover{
@@ -68,10 +78,12 @@
 .circleCompInput{
     background-color: #2b3641;
     color: hsl(216, 12%, 54%);
-    border: 1px solid #2b3641;
-    border-radius: 30px;
+    border: none;
+    border-radius: 50%;
     padding: 15px;
     cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
 }
 
 .circleCompInput:hover{
@@ -82,9 +94,11 @@
 .circleCompActive{
     background-color: hsl(217, 12%, 63%);
     color: white;
-    border: 1px solid hsl(217, 12%, 63%);
-    border-radius: 30px;
+    border: none;
+    border-radius: 50%;
     padding: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -115,4 +129,45 @@
 .thanksText > p{
     text-align: center;
     color: hsl(217, 12%, 63%);
+}
+
+
+@media only screen and (max-width:1025px){
+    .card{
+        width: 44%;
+        left: 28%;
+        top: 180px;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .card{
+        width: 59%;
+        left: 20%;
+        top: 88px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .card{
+        width: 94%;
+        left: 3%;
+        top: 88px;
+    }
+    
+    .ratings{
+        gap:29px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .ratings{
+        gap: 17px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .card-content{
+        padding: 25px;
+    }
 }

@@ -53,11 +53,7 @@ function App() {
                       type='button' 
                       value='1'
                       className={activeRating[0] ? 'circleCompActive' : 'circleCompInput'}
-                      onClick={(e) => {
-                        // setActiveRating(true)
-                        handleRatingValue(e, 0)
-                        // setRatingValue(e.target.value)
-                      }}
+                      onClick={(e) => { handleRatingValue(e, 0) }}
                     />
                   </div>
                   <div className='circle-comp'>
@@ -65,11 +61,7 @@ function App() {
                       type='button' 
                       value='2'
                       className={activeRating[1] ? 'circleCompActive' : 'circleCompInput'}
-                      onClick={(e) => {
-                        // setActiveRating(true)
-                        handleRatingValue(e, 1)
-                        // setRatingValue(e.target.value)
-                      }}
+                      onClick={(e) => { handleRatingValue(e, 1) }}
                     />
                   </div>
                   <div className='circle-comp'>
@@ -77,11 +69,7 @@ function App() {
                       type='button' 
                       value='3'
                       className={activeRating[2] ? 'circleCompActive' : 'circleCompInput'}
-                      onClick={(e) => {
-                        // setActiveRating(true)
-                        handleRatingValue(e, 2)
-                        // setRatingValue(e.target.value)
-                      }}
+                      onClick={(e) => { handleRatingValue(e, 2) }}
                     />
                   </div>
                   <div className='circle-comp'>
@@ -89,11 +77,7 @@ function App() {
                       type='button' 
                       value='4'
                       className={activeRating[3] ? 'circleCompActive' : 'circleCompInput'}
-                      onClick={(e) => {
-                        // setActiveRating(true)
-                        handleRatingValue(e, 3)
-                        // setRatingValue(e.target.value)
-                      }}
+                      onClick={(e) => { handleRatingValue(e, 3) }}
                     />
                   </div>
                   <div className='circle-comp'>
@@ -101,15 +85,11 @@ function App() {
                       type='button' 
                       value='5'
                       className={activeRating[4] ? 'circleCompActive' : 'circleCompInput'}
-                      onClick={(e) => {
-                        // setActiveRating(true)
-                        handleRatingValue(e, 4)
-                        // setRatingValue(e.target.value)
-                      }}
+                      onClick={(e) => { handleRatingValue(e, 4) }}
                     />
                   </div>
                 </div>
-                <button onClick={handleRating}>Submit</button>
+                <button onClick={handleRating}>SUBMIT</button>
               </div>
             </>
             :
