@@ -1,0 +1,27 @@
+.cardThanksContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.selectedRating{
+    background-color: #2b3641;
+    border: 1px solid #2b3641;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+.selectedRating > span{
+    color: #fb7413;
+}
+
+.thanksText > h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.thanksText > p{
+    text-align: center;
+    color: #959eac;
+}

@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
+* {
+    overflow: hidden;
+}
+
 .container{
-    padding: 50px;
     margin: auto;
     position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .card{
@@ -12,8 +17,9 @@
     width: 30%;
     border-radius: 15px;
     position: absolute;
-    left: 35%;
-    top: 150px
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .card-content{
@@ -23,146 +29,21 @@
     padding: 50px;
 }
 
-.card-text{
-    margin-top: 20px;
-}
-
-.card-text > h2{
-    color: white;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 400;
-}
-
-.card-text > p{
-    color: hsl(217, 12%, 63%);
-    font-size: 15px;
-    font-family: 'Overpass', sans-serif;
-    line-height: 1.7;
-}
-
-.rating-area{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.ratings{
-    display: flex;
-    gap: 40px;
-}
-
-.rating-area > button{
-    background-color: hsl(25, 97%, 53%);
-    color: white;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.rating-area > button:hover{
-    background-color: white;
-    color: hsl(25, 97%, 53%);
-}
-
-.circle-comp > span{
-    background-color: #2b3641;
-    padding: 15px;
-    border-radius: 30px;
-}
-
-.circleCompInput{
-    background-color: #2b3641;
-    color: hsl(216, 12%, 54%);
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    cursor: pointer;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 400;
-}
-
-.circleCompInput:hover{
-    background-color: hsl(25, 97%, 53%);
-    color: white;
-}
-
-.circleCompActive{
-    background-color: hsl(217, 12%, 63%);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 400;
-}
-
-
-/* ============= cardThanks component ================ */
-.cardThanksContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.selectedRating{
-    background-color: #2b3641;
-    border: 1px solid #2b3641;
-    border-radius: 15px;
-    padding: 0.5rem;
-}
-
-.selectedRating > span{
-    color: hsl(25, 97%, 53%);
-}
-
-.thanksText > h1{
-    text-align: center;
-    color: white;
-}
-
-.thanksText > p{
-    text-align: center;
-    color: hsl(217, 12%, 63%);
-}
-
-
 @media only screen and (max-width:1025px){
     .card{
         width: 44%;
-        left: 28%;
-        top: 180px;
     }
 }
 
 @media only screen and (max-width: 770px){
     .card{
         width: 59%;
-        left: 20%;
-        top: 88px;
     }
 }
 
 @media only screen and (max-width: 426px){
     .card{
         width: 94%;
-        left: 3%;
-        top: 88px;
-    }
-    
-    .ratings{
-        gap:29px;
-    }
-}
-
-@media only screen and (max-width: 376px){
-    .ratings{
-        gap: 17px;
     }
 }
 

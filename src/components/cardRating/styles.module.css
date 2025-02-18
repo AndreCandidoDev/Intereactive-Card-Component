@@ -1,0 +1,69 @@
+.circleComp > span{
+    background-color: #2b3641;
+    width: 50px;
+    height: 50px;
+    border-radius: 99%;
+}
+
+.cardText{
+    margin-top: 20px;
+}
+
+.cardText > h2{
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.cardText > p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.7;
+}
+
+.ratingArea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    width: 100%;
+    gap: 40px;
+}
+
+.ratingArea > button{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.ratingArea > button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+@media only screen and (max-width: 426px){
+    .ratings{
+        gap:29px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .ratings{
+        gap: 17px;
+    }
+}

@@ -1,0 +1,21 @@
+.circleCompInput, .circleCompActive{
+    background-color: #2b3641;
+    color: #7c8798;
+    border: none;
+    border-radius: 99%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.circleCompInput:hover{
+    background-color: #fb7413;
+    color: white;
+}
+
+.circleCompActive{
+    background-color: #959eac;
+    color: white;
+}
