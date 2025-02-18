@@ -3,10 +3,10 @@
     width: 50px;
     height: 50px;
     border-radius: 99%;
-}
-
-.cardText{
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .cardText > h2{
@@ -34,9 +34,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;    
+    justify-content: space-between;    
     width: 100%;
-    gap: 40px;
+    gap: 2rem;
 }
 
 .ratingArea > button{
@@ -57,13 +57,11 @@
 }
 
 @media only screen and (max-width: 426px){
-    .ratings{
-        gap:29px;
+    .ratingArea {
+        margin-top: 0;
     }
-}
 
-@media only screen and (max-width: 376px){
     .ratings{
-        gap: 17px;
+        gap: 12px;
     }
 }
